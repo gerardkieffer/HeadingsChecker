@@ -1,0 +1,94 @@
+.tooltip {
+    position: absolute;
+    min-width: 250px;
+    white-space: nowrap;
+    transform: translate(0, -50%);
+    padding: 5px 15px;
+    border-radius: 8px;
+    z-index: 9999999999;
+    box-sizing: border-box;
+    opacity: 1;
+    max-width: 600px;
+    /*transition: opacity 0.4s;*/
+}
+
+.tooltip-reference-content {
+    display: none;
+}
+
+.tooltip .tooltip-reference-content {
+    display: block;
+}
+
+.hiddenTooltip {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.tooltip .arrow {
+    position: absolute;
+    /*top: 50%;*/
+    /*margin-top: -12px;*/
+    width: 12px;
+    height: 24px;
+    overflow: hidden;
+}
+
+.position-left .tooltip .arrow {
+    right: 100%;
+}
+
+.position-right .tooltip .arrow {
+    left: 100%;
+}
+
+.tooltip .arrow::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 50%;
+}
+
+.position-left .tooltip .arrow::after {
+    transform: translate(50%, -50%) rotate(-45deg);
+    left: -2px;
+}
+
+.position-right .tooltip .arrow::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+    left: 0;
+}
+
+.tooltip,
+.tooltip .arrow::after {
+    border-width: 1px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+    border-style: solid;
+}
+
+/* Styles that are modified in the dark theme */
+.tooltip,
+.tooltip .arrow::after {
+    background-color: #FFF;
+    color: #333;
+    border-color: #CCC !important;
+    border-width: 1px;
+}
+
+.tooltip-item {
+    display: block;
+    margin: 2px 0;
+    padding: 2px;
+    font-size: .9em;
+}
+
+.tooltip-item:first-child {
+    font-weight: bold;
+    font-size: 1em;
+    border-bottom: 1px solid;
+    margin: 0 -5px 4px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

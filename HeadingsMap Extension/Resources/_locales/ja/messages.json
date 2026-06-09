@@ -1,0 +1,334 @@
+{
+   "active": {
+      "description": "",
+      "message": "アクティブ"
+   },
+   "analysisAriaLabel": {
+      "description": "",
+      "message": "分析"
+   },
+   "anchor": {
+      "description": "",
+      "message": "アンカー"
+   },
+   "ariaLiveCollapsedLevel": {
+      "description": "",
+      "message": "レベル {level} の下のツリーの見出しが折りたたまれました"
+   },
+   "ariaLiveExpandedLevel": {
+      "description": "",
+      "message": "レベル {level} の下のツリーの見出しが展開されました"
+   },
+   "ariaLiveHeadingsCopied": {
+      "description": "",
+      "message": "構造はクリップボードにコピーされました"
+   },
+   "ariaLiveSwitchedToLeft": {
+      "description": "",
+      "message": "ビューの左側に付属"
+   },
+   "ariaLiveSwitchedToRight": {
+      "description": "",
+      "message": "ビューの右側に付属"
+   },
+   "clearText": {
+      "description": "",
+      "message": "テキストのリセット"
+   },
+   "clickTheAnchor": {
+      "description": "",
+      "message": "アンカーアイコンをクリックして URL をコピー"
+   },
+   "closeButton": {
+      "description": "",
+      "message": "閉じる"
+   },
+   "closeButtonAriaLabel": {
+      "description": "",
+      "message": "パネルを閉じる"
+   },
+   "closeSearchButtonLabel": {
+      "description": "",
+      "message": "見出し検索を閉じる"
+   },
+   "collapseLabel": {
+      "description": "",
+      "message": "折りたたむ"
+   },
+   "collapseTreeNode": {
+      "description": "",
+      "message": "入れ子の見出し"
+   },
+   "collapserDescription": {
+      "description": "",
+      "message": "見出しレベルごとに見出しツリーを折りたたむ/展開するボタン"
+   },
+   "contributeMenuLink": {
+      "description": "",
+      "message": "貢献する"
+   },
+   "copyButtonLabel": {
+      "description": "",
+      "message": "結果をコピー"
+   },
+   "documentSelectorTitle": {
+      "description": "",
+      "message": "文書を選択して見出し/セクション構造を取得します"
+   },
+   "documents": {
+      "description": "",
+      "message": "ドキュメント"
+   },
+   "element": {
+      "description": "",
+      "message": "要素"
+   },
+   "emptyHeader": {
+      "description": "",
+      "message": "空の見出し"
+   },
+   "error": {
+      "description": "",
+      "message": "エラー"
+   },
+   "errorNoHeadingSection": {
+      "description": "",
+      "message": "Error: 見出しのないセクション"
+   },
+   "expandLabel": {
+      "description": "",
+      "message": "展開する"
+   },
+   "expandTreeNode": {
+      "description": "",
+      "message": "入れ子の見出し"
+   },
+   "extensionDescription": {
+      "description": "Description of the extension.",
+      "message": "見出し構造を表示、参照、監査する (アクセシビリティと SEO のため)"
+   },
+   "extensionName": {
+      "description": "Name of the extension.",
+      "message": "HeadingsChecker"
+   },
+   "focusHeadingsTree": {
+      "description": "",
+      "message": "結果ツリーで最後にフォーカスされた項目にフォーカス"
+   },
+   "generatedBy": {
+      "description": "",
+      "message": "によって生成されます"
+   },
+   "headersTab": {
+      "description": "",
+      "message": "ヘッダー構造"
+   },
+   "heading": {
+      "description": "",
+      "message": "見出し"
+   },
+   "headingLevel": {
+      "description": "",
+      "message": "見出しレベル"
+   },
+   "helpLabel": {
+      "description": "",
+      "message": "ヘルプ"
+   },
+   "helpWithAccessibility": {
+      "description": "",
+      "message": "Accessibilité numérique Luxembourg"
+   },
+   "helpWithAccessibilityOnLinkedIn": {
+      "description": "",
+      "message": "Accessibilité numérique Luxembourg, opens in new window"
+   },
+   "identifyHeadersInPage": {
+      "description": "",
+      "message": "ページ上の要素を明らかにする"
+   },
+   "landmarksTab": {
+      "description": "",
+      "message": "Landmarks"
+   },
+   "maniMenuLabel": {
+      "description": "",
+      "message": "メニュー"
+   },
+   "missingH1": {
+      "description": "",
+      "message": "H1 がありません"
+   },
+   "noHeadings": {
+      "description": "",
+      "message": "見出しなし"
+   },
+   "number": {
+      "description": "",
+      "message": "番号"
+   },
+   "openSettingsDialog": {
+      "description": "",
+      "message": "設定ダイアログを開く"
+   },
+   "openShortcutsDialog": {
+      "description": "",
+      "message": "ショートカットダイアログを開く"
+   },
+   "outlineTab": {
+      "description": "",
+      "message": "HTML5 Outline"
+   },
+   "pinMenuLabel": {
+      "description": "",
+      "message": "自動的に開く"
+   },
+   "pinPanelByDomainLabel": {
+      "description": "",
+      "message": "このドメインに対して常に開く"
+   },
+   "pinPanelByURLLabel": {
+      "description": "",
+      "message": "この URL に対して常に開く"
+   },
+   "pinPanelLabel": {
+      "description": "",
+      "message": "常に自動的に開く"
+   },
+   "potentiallyHidden": {
+      "description": "",
+      "message": "潜在的に隠されている"
+   },
+   "potentiallyHiddenPlural": {
+      "description": "",
+      "message": "潜在的に隠されている"
+   },
+   "privacyPolicyMenuLink": {
+      "description": "",
+      "message": "プライバシーポリシー"
+   },
+   "refreshResultsMenuLink": {
+      "description": "",
+      "message": "結果を更新"
+   },
+   "releaseNotesMenuLink": {
+      "description": "",
+      "message": "リリースノート"
+   },
+   "repeatedLandmark": {
+      "description": "",
+      "message": "is repeated"
+   },
+   "repeatedUniqueLandmark": {
+      "description": "",
+      "message": "must be unique"
+   },
+   "resizePanelAriaLabel": {
+      "description": "",
+      "message": "矢印キーでパネル幅を増減する"
+   },
+   "resultsListLabel": {
+      "description": "",
+      "message": "見出し"
+   },
+   "revealInViewButtonAriaLabel": {
+      "description": "",
+      "message": "ヘッダーを見せる"
+   },
+   "saved": {
+      "description": "",
+      "message": "保存されました"
+   },
+   "searchButtonLabel": {
+      "description": "",
+      "message": "見出し検索を開く"
+   },
+   "searchInTree": {
+      "description": "",
+      "message": "ツリー内検索"
+   },
+   "searchLabel": {
+      "description": "",
+      "message": "見出しを検索"
+   },
+   "settingsLabel": {
+      "description": "",
+      "message": "設定"
+   },
+   "shortcutCancelButton": {
+      "description": "",
+      "message": "ショートカットの編集をキャンセル"
+   },
+   "shortcutEditButton": {
+      "description": "",
+      "message": "ショートカットを編集"
+   },
+   "shortcutEditLabel": {
+      "description": "",
+      "message": "任意のキーを押す（修飾キー 'control', 'shift', 'alt', または 'meta'と組み合わせることができます）"
+   },
+   "shortcutErrorMessage": {
+      "description": "",
+      "message": "ショートカットはすでに使用済み"
+   },
+   "shortcutHintMessage": {
+      "description": "",
+      "message": "任意のキーを押す"
+   },
+   "shortcutNotDefined": {
+      "description": "",
+      "message": "未定義"
+   },
+   "shortcutResetButton": {
+      "description": "",
+      "message": "ショートカットをデフォルトにリセット"
+   },
+   "shortcutSaveButton": {
+      "description": "",
+      "message": "ショートカットを保存"
+   },
+   "shortcuts": {
+      "description": "",
+      "message": "キーボードショートカット"
+   },
+   "shortcutsPanelDescription": {
+      "description": "",
+      "message": "これは、拡張機能に関連付けられたキーボード ショートカットのリストです。既存のものを変更して、ニーズに合わせて調整することができます。複数のキーを 1 つのショートカットに組み合わせることができます。文字、数字、<kbd class='shortcut'>shift</kbd>、および一部の文字 <kbd class='shortcut'>.</kbd>, <kbd class='shortcut'>,</kbd>, <kbd class='shortcut'>:</kbd>, <kbd class='shortcut'>;</kbd>, <kbd class='shortcut'>/</kbd>, <kbd class='shortcut'><</kbd>, <kbd class='shortcut'>></kbd>, <kbd class='shortcut'>arrowLeft</kbd>, <kbd class='shortcut'>arrowRight</kbd>, <kbd class='shortcut'>arrowUp</kbd>, <kbd class='shortcut'>arrowDown</kbd> のみが許可されます。"
+   },
+   "shortcutsPanelDescriptionBottom": {
+      "description": "",
+      "message": "ショートカット機能についてご提案がある場合、<a href='https://github.com/gerardkieffer/HeadingsChecker' target='_blank'>GitHub</a> にIssueを開いてください。"
+   },
+   "switchPositionLabel": {
+      "description": "",
+      "message": "パネルの位置を変更"
+   },
+   "switchToLeft": {
+      "description": "",
+      "message": "パネル位置を左に切り替え"
+   },
+   "switchToRight": {
+      "description": "",
+      "message": "パネル位置を右に切り替え"
+   },
+   "toggleTreeNodesByLevel": {
+      "description": "",
+      "message": "見出しレベルごとにツリーノードを折りたたみ、または展開する"
+   },
+   "topLevelLandmarkError": {
+      "description": "",
+      "message": "must be at top level"
+   },
+   "updatePanelPosition": {
+      "description": "",
+      "message": "パネルの位置を変更（左 - 右）"
+   },
+   "visible": {
+      "description": "",
+      "message": "見える"
+   },
+   "wrongHierarchy": {
+      "description": "",
+      "message": "間違ったレベル階層"
+   }
+}

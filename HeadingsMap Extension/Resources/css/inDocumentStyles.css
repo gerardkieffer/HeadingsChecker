@@ -1,0 +1,97 @@
+#headingsMapPanel {
+    border-style: none !important;
+    position: fixed !important;
+    top: 0 !important;
+    height: 100% !important;
+    margin: 0 !important;
+    z-index: 10000000000 !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    direction: ltr !important;
+}
+
+@keyframes headingsMapOutline {
+    0% {
+        outline-color: transparent;
+    }
+    50% {
+        outline-color: red;
+    }
+    100% {
+        outline-color: transparent;
+    }
+}
+
+*[data-headingsMap-highlight=true] {
+    outline-width: 4px;
+    outline-style: solid;
+    outline-color: transparent;
+    animation-name: headingsMapOutline;
+    animation-iteration-count: 4;
+    animation-duration: .5s;
+}
+
+.headingsMap-overlays-container {
+    z-index: 10000000;
+    pointer-events: none;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.headingsMap-overlay {
+    pointer-events: none !important;
+    z-index: 10000000 !important;
+    outline: 3px solid rgba(127,37,187,0.35) !important;
+    border-radius: 0 0 0 2px !important;
+    outline-offset: -3px !important;
+    transition: all .25s ease-out !important;
+}
+
+.headingsMap-overlay:after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 10000000;
+    outline: 2px solid #7f25bb;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 0 0 0 2px;
+}
+
+.headingsMap-overlay .headingsMap-overlay-label {
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    z-index: 10000001 !important;
+    font-weight: normal !important;
+    font-family: Arial, Verdana, sans-serif !important;
+    font-size: max(.82rem, 13px) !important;
+    background: #7f25bb !important;
+    color: #f7f7fa !important;
+    padding: 0 7px !important;
+    height: 30px !important;
+    line-height: 30px !important;
+    text-align: center !important;
+    box-shadow: 0 0 9px #999 !important;
+    box-sizing: border-box !important;
+    border-radius: 0 0 0 4px !important;
+    pointer-events: initial !important;
+    cursor: pointer !important;
+    border-style: none !important;
+    margin: 0 !important;
+    display: block !important;
+    visibility: visible !important;
+}
+
+[data-element-id-overlay]:hover,
+.headingsMap-overlay .headingsMap-overlay-label:hover {
+    z-index: 2000000001 !important;
+}

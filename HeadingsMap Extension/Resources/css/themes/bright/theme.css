@@ -1,0 +1,242 @@
+#headingsMapWrapper,
+#headingsMapWrapper .results .tree-results,
+#headingsMapWrapper .results .tree-results ul,
+#headingsMapWrapper li,
+#headingsMapWrapper .tab-button,
+.tab-button,
+#headingsMapWrapper .results.active .tree-root,
+#headingsMapWrapper .results.active,
+#headingsMapWrapper .context-menu ul,
+#headingsMapWrapper .fixed-tab-content-start,
+#headingsMapWrapper .fixed-tab-content-end {
+    color: #1a1a19;
+}
+
+body,
+#headingsMapWrapper,
+#headingsMapWrapper .context-menu .arrow,
+#headingsMapWrapper .context-menu ul,
+#headingsMapWrapper .menu-trigger,
+#headingsMapWrapper .context-menu li:first-child:after,
+.fixed-tab-content-start-utils {
+    background-color: #f7f7fa !important;
+}
+
+#headingsMapWrapper .results .tree-results,
+#headingsMapWrapper .results .tree-results ul,
+#headingsMapWrapper .results .tree-results li:nth-last-child(1),
+#headingsMapWrapper .results.active {
+    background-color: #f7f7fa;
+}
+
+#headingsMapWrapper .panel-results,
+#headingsMapWrapper .tab-button,
+.tab-button,
+#headingsMapWrapper .context-menu .arrow,
+#headingsMapWrapper .context-menu ul,
+#headingsMapWrapper .context-menu li:first-child:after,
+#headingsMapWrapper .visibility-legend,
+#headingsMapWrapper div[role=tablist] {
+    border-color: rgba(26,26,25,0.2) !important;
+}
+
+#headingsMapWrapper .combobox.search-text-active .clear-text-button {
+    outline-color: #1a1a19 !important;
+}
+
+#headingsMapWrapper .tab-button:focus,
+.tab-button:focus,
+#headingsMapWrapper .tab-button[aria-selected=true],
+.tab-button[aria-selected=true] {
+    border-bottom-color: #1a1a19 !important;
+}
+
+#headingsMapWrapper .visibility-legend{
+    background-color: #eeecf5;
+}
+
+#headingsMapWrapper p,
+#headingsMapWrapper a,
+#headingsMapWrapper .no-headed,
+#headingsMapWrapper .no-landmarks-error,
+#headingsMapWrapper .repeated-landmarks-error,
+#headingsMapWrapper .not-top-level-error,
+#headingsMapWrapper .repeated-unique-landmarks-error {
+    color: #1a1a19;
+}
+
+#headingsMapWrapper .results a.active-element {
+    border-right-color: rgba(26,26,25,0.2);
+    background-color: rgba(127,37,187,0.12);
+    border-right: 2px solid rgba(127,37,187,0.25);
+}
+
+#extension_title {
+    background-image: url(./themes/bright/icons/headingsMap40_dark.png);
+}
+
+.tooltip-error {
+    background-color: #FF7575 !important;
+}
+
+.main-menu.menu-trigger {
+    background-image: url(./themes/bright/icons/menu-dots.png);
+}
+
+#headingsMapWrapper #headingsMap_refresh {
+    background-image: url(./themes/bright/icons/refresh.png);
+}
+
+#headingsMapWrapper #settings {
+    background-image: url(./themes/bright/icons/settings.png);
+}
+
+#headingsMapWrapper #switchPosition {
+    background-image: url(./themes/bright/icons/position-right.png);
+}
+
+#headingsMapWrapper #shortcutsId {
+    background-image: url(./themes/bright/icons/shortcut.png);
+}
+
+#headingsMapWrapper #help {
+    background-image: url(./themes/bright/icons/help.png);
+}
+
+#headingsMapWrapper #headingsMap_release_notes {
+    background-image: url(./themes/bright/icons/releasenotes.png);
+}
+
+#headingsMapWrapper #headingsMap_privacy_policy {
+    background-image: url(./themes/bright/icons/privacy.png);
+}
+
+#headingsMapWrapper #contribute {
+    background-image: url(./themes/bright/icons/contribute.png);
+}
+
+.headingsMap_closer {
+    background-image: url(./themes/bright/icons/close.png);
+}
+
+.hiddenElementsCounter,
+.tooltip-content .hidden-element,
+.hidden-header-information,
+.document_selector .hidden-element {
+    background-image: url(./themes/bright/icons/hidden.png);
+}
+
+#headingsMapWrapper .results a[href] .anchor-icon,
+.tooltip-content .anchor-icon {
+    background-image: url(./themes/bright/icons/anchor.png);
+}
+
+.pinned-indicator {
+    background-image: url(./themes/bright/icons/pinned-off.png);
+}
+
+.headingsMap-reveal {
+    background-image: url(./themes/bright/icons/visible.png);
+}
+
+.headingsMap-reveal[aria-pressed=true] {
+    background-image: url(./themes/bright/icons/visible-hide.png);
+}
+
+.search-button {
+    background-image: url(./themes/bright/icons/lens.png);
+}
+
+.search-button-close {
+    background-image: url(./themes/bright/icons/close-simple.png);
+}
+
+.clear-text-button {
+    background-image: url(./themes/bright/icons/close-simple.png);
+}
+
+.pinned--on .pinned-indicator,
+.pinned-to-tab--on .pinned-indicator,
+.pinned-by-URL--on .pinned-indicator,
+.pinned-by-domain--on .pinned-indicator {
+    background-image: url(./themes/bright/icons/pinned-on.png);
+}
+
+.pinned--off #pin-button,
+.pinned-by-URL--off .pin-by-URL-button,
+.pinned-by-domain--off .pin-by-domain-button {
+    background-image: url(./themes/bright/icons/pinned-off.png);
+}
+
+.pinned--on #pin-button,
+.pinned-by-URL--on .pin-by-URL-button,
+.pinned-by-domain--on .pin-by-domain-button {
+    background-image: url(./themes/bright/icons/pinned-on.png);
+}
+
+.results a:focus,
+.results a.focused,
+.active-item {
+    box-shadow: inset 0 0 3px rgba(26,26,25,0.8);
+    outline: none;
+}
+
+.extension-panel-resizer {
+    background-color: #f0eef8;
+}
+
+.extension-panel-resizer:before {
+    border-left: 1px dotted rgba(26,26,25,0.4);
+    border-right: 1px dotted rgba(26,26,25,0.4);
+}
+
+.copy-button {
+    background-image: url(./themes/bright/icons/copy.png);
+}
+
+.collapse-trigger {
+    background-image: url(./themes/bright/icons/expanded.png);
+}
+
+.collapse-trigger.collapse-trigger--collapsed {
+    background-image: url(./themes/bright/icons/collapsed.png);
+}
+
+.headingsMap-highlighted {
+    outline: 2px solid #7f25bb;
+}
+
+#headingsMapWrapper .elements-search .search-results-list {
+    background-color: #f7f7fa !important;
+}
+
+.search-field {
+    background-color: #e4e0f0;
+}
+
+.combobox-button:after,
+.combobox-icon {
+    background-image: url(./themes/bright/icons/collapsed.png);
+}
+
+
+/* Tree ---------------------------------------------------- */
+
+.show-error #headingsMapWrapper .head-error,
+.show-error #headingsMapWrapper .no-headed,
+.show-error #headingsMapWrapper .no-landmarks-error,
+.show-error #headingsMapWrapper .repeated-landmarks-error,
+.show-error #headingsMapWrapper .not-top-level-error,
+.show-error #headingsMapWrapper .repeated-unique-landmarks-error,
+.show-error.show-head-error-h1 #headingsMapWrapper .head-error-h1 {
+    background-color: #800 !important;
+    background: linear-gradient(to right, transparent 0, transparent 22px, #FF7575 20px, #FF7575 100%) !important;
+}
+
+.tree-results .collapse-trigger {
+    background-image: url(./themes/bright/icons/expanded.png), url(icons/tree_d.gif);
+}
+
+.tree-results .collapse-trigger.collapse-trigger--collapsed {
+    background-image: url(./themes/bright/icons/collapsed.png);
+}

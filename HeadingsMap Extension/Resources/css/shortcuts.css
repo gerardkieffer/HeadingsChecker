@@ -1,0 +1,252 @@
+.shortcuts-list {
+    padding: 0;
+    margin: 0 auto !important;
+    max-width: 600px;
+}
+
+.shortcut-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px dotted;
+    padding: 5px 5px 10px;
+}
+
+.shortcut-item:first-child {
+    border-top: 1px dotted;
+    padding-top: 10px;
+}
+
+.shortcut-keys {
+    display: flex;
+    flex-direction: row;
+    border: 1px dotted;
+    box-sizing: border-box;
+    justify-content: space-between;
+    border-radius: 4px;
+    align-items: center;
+    position: relative;
+    padding: 5px 10px;
+    min-width: 300px;
+    min-height: max(3.4575rem, 55.32px);
+}
+
+.shortcut-keys:focus-within {
+    outline: 2px solid;
+}
+
+.shortcut-keys-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.kdb-shortcut + .kdb-shortcut {
+    margin-top: 5px;
+}
+
+.shortcut {
+    display: inline-block;
+    font-size: 1em;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+kbd.shortcut {
+    background-color: #DDDDDD;
+    border-radius: 3px;
+    border: 1px solid #b4b4b4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
+    color: #333333;
+    font-weight: bold;
+    padding: 5px 8px;
+}
+
+.shortcut.kdb-shortcut-undefined {
+    opacity: .8;
+    font-size: max(.9rem, 14px);
+}
+
+p kbd.shortcut {
+    padding: 0 4px;
+}
+
+.editor-shortcut-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-shortcut-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.input-shortcut {
+    text-align: center;
+    line-height: max(1.5rem, 24px);
+    border-style: none;
+    border-bottom: 1px dotted;
+    background: transparent;
+    font-weight: bold;
+    font-size: max(1rem, 16px);
+    border-bottom: 1px solid;
+    width: max(10rem, 160px);
+    cursor: pointer;
+}
+
+.input-shortcut:focus {
+    outline: none;
+}
+
+.button-shortcut {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin-left: 10px;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    vertical-align: middle;
+    opacity: .6;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.button-shortcut:not([disabled]):hover {
+    opacity: 1;
+}
+
+.button-shortcut[disabled] {
+    opacity: .2;
+    cursor: initial;
+}
+
+.reset-shortcut,
+.input-shortcut,
+.save-shortcut,
+.cancel-shortcut {
+    display: none;
+}
+
+.is-custom-shortcut:not(.shortcut-edition-active) .reset-shortcut {
+    display: inline-block;
+}
+
+.shortcut-edition-active .input-shortcut,
+.shortcut-edition-active .save-shortcut,
+.shortcut-edition-active .cancel-shortcut {
+    display: inline-block;
+}
+
+.shortcut-edition-active .kdb-shortcut,
+.shortcut-edition-active .edit-shortcut,
+.shortcut-edition-active .shortcut-keys-container {
+    display: none;
+}
+
+.shortcut-edition-active .editor-shortcut-container {
+    width: 100%;
+}
+
+.shortcut-edition-active .shortcut-keys {
+    cursor: pointer;
+}
+
+.shortcut-hint-message,
+.shortcut-error-message {
+    display: none;
+    font-size: max(.7rem, 11px);
+    margin-top: 4px;
+    margin-bottom: -4px;
+}
+
+.shortcut-edition-active .shortcut-hint-message {
+    display: inline-block;
+}
+
+.shortcut-error-message {
+    color: #F00;
+}
+
+.shortcut-error .shortcut-keys {
+    border-color: #F00;
+}
+
+.shortcut-error .shortcut-hint-message {
+    display: none;
+}
+
+.shortcut-error .shortcut-error-message {
+    display: inline-block;
+}
+
+.shortcut-error .input-shortcut {
+    color: #F00;
+    border-bottom: 1px solid #F00;
+}
+
+.shortcut-error .shortcut-keys:focus-within {
+    outline-color: #F00;
+}
+
+/* Themes */
+.shortcut-keys-container,
+.input-shortcut {
+    border-color: rgba(0, 0, 0, .3);
+}
+
+.dark-theme .shortcut-keys-container,
+.dark-theme .input-shortcut {
+    border-color: rgba(255, 255, 255, .3);
+}
+
+.input-shortcut {
+    color: #333;
+}
+
+.dark-theme .input-shortcut {
+    color: #CCC;
+}
+
+.dark-theme .shortcut-error .input-shortcut {
+    color: #F00;
+    border-bottom: 1px solid #F00;
+}
+
+.edit-shortcut {
+    background-image: url(./themes/bright/icons/edit.png);
+}
+
+.dark-theme .edit-shortcut {
+    background-image: url(./themes/dark/icons/edit.png);
+}
+
+.reset-shortcut {
+    background-image: url(./themes/bright/icons/reset.png);
+}
+
+.dark-theme .reset-shortcut {
+    background-image: url(./themes/dark/icons/reset.png);
+}
+
+.save-shortcut {
+    background-image: url(./themes/bright/icons/accept.png);
+}
+
+.dark-theme .save-shortcut {
+    background-image: url(./themes/dark/icons/accept.png);
+}
+
+.cancel-shortcut {
+    background-image: url(./themes/bright/icons/close.png);
+}
+
+.dark-theme .cancel-shortcut {
+    background-image: url(./themes/dark/icons/close.png);
+}

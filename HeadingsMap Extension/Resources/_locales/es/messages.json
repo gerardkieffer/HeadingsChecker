@@ -1,0 +1,334 @@
+{
+   "active": {
+      "description": "",
+      "message": "activo"
+   },
+   "analysisAriaLabel": {
+      "description": "",
+      "message": "Análisis"
+   },
+   "anchor": {
+      "description": "",
+      "message": "Ancla"
+   },
+   "ariaLiveCollapsedLevel": {
+      "description": "",
+      "message": "Encabezados en el árbol por debajo del nivel {level} colapsados"
+   },
+   "ariaLiveExpandedLevel": {
+      "description": "",
+      "message": "Encabezados en el árbol por debajo del nivel {level} expandidos"
+   },
+   "ariaLiveHeadingsCopied": {
+      "description": "",
+      "message": "estructura copiada al portapapeles"
+   },
+   "ariaLiveSwitchedToLeft": {
+      "description": "",
+      "message": "dispuesto a la izquierda de la vista"
+   },
+   "ariaLiveSwitchedToRight": {
+      "description": "",
+      "message": "dispuesto a la derecha de la vista"
+   },
+   "clearText": {
+      "description": "",
+      "message": "resetear texto"
+   },
+   "clickTheAnchor": {
+      "description": "",
+      "message": "Click en el icono para copiar la URL"
+   },
+   "closeButton": {
+      "description": "",
+      "message": "cerrar"
+   },
+   "closeButtonAriaLabel": {
+      "description": "",
+      "message": "cerrar panel"
+   },
+   "closeSearchButtonLabel": {
+      "description": "",
+      "message": "cerrar búsqueda"
+   },
+   "collapseLabel": {
+      "description": "",
+      "message": "colapsar"
+   },
+   "collapseTreeNode": {
+      "description": "",
+      "message": "encabezados anidados"
+   },
+   "collapserDescription": {
+      "description": "",
+      "message": "Botones para contraer/expandir el árbol de encabezados por nivel de encabezado"
+   },
+   "contributeMenuLink": {
+      "description": "",
+      "message": "contribuir"
+   },
+   "copyButtonLabel": {
+      "description": "",
+      "message": "copiar resultado"
+   },
+   "documentSelectorTitle": {
+      "description": "",
+      "message": "seleccione el documento para obtener su estructura de encabezados o secciones"
+   },
+   "documents": {
+      "description": "",
+      "message": "Documentos"
+   },
+   "element": {
+      "description": "",
+      "message": "Elemento"
+   },
+   "emptyHeader": {
+      "description": "",
+      "message": "Encabezado vacío"
+   },
+   "error": {
+      "description": "",
+      "message": "Error"
+   },
+   "errorNoHeadingSection": {
+      "description": "",
+      "message": "Error: sección sin encabezado"
+   },
+   "expandLabel": {
+      "description": "",
+      "message": "expandir"
+   },
+   "expandTreeNode": {
+      "description": "",
+      "message": "encabezados anidados"
+   },
+   "extensionDescription": {
+      "description": "Description of the extension.",
+      "message": "To show, browse and audit (for accessibility and SEO) the headings structure"
+   },
+   "extensionName": {
+      "description": "Name of the extension.",
+      "message": "HeadingsChecker"
+   },
+   "focusHeadingsTree": {
+      "description": "",
+      "message": "Enfocar el último elemento enfocado en el árbol de resultados"
+   },
+   "generatedBy": {
+      "description": "",
+      "message": "Generado con"
+   },
+   "headersTab": {
+      "description": "",
+      "message": "Encabezados"
+   },
+   "heading": {
+      "description": "",
+      "message": "Encabezado"
+   },
+   "headingLevel": {
+      "description": "",
+      "message": "Encabezado de nivel"
+   },
+   "helpLabel": {
+      "description": "",
+      "message": "Ayuda"
+   },
+   "helpWithAccessibility": {
+      "description": "",
+      "message": "Accessibilité numérique Luxembourg"
+   },
+   "helpWithAccessibilityOnLinkedIn": {
+      "description": "",
+      "message": "Accessibilité numérique Luxembourg, opens in new window"
+   },
+   "identifyHeadersInPage": {
+      "description": "",
+      "message": "Mostrar elementos en la página"
+   },
+   "landmarksTab": {
+      "description": "",
+      "message": "Landmarks"
+   },
+   "maniMenuLabel": {
+      "description": "",
+      "message": "Menu"
+   },
+   "missingH1": {
+      "description": "",
+      "message": "No existe H1"
+   },
+   "noHeadings": {
+      "description": "",
+      "message": "Sin encabezados"
+   },
+   "number": {
+      "description": "",
+      "message": "número"
+   },
+   "openSettingsDialog": {
+      "description": "",
+      "message": "Abrir el diálogo de ajustes"
+   },
+   "openShortcutsDialog": {
+      "description": "",
+      "message": "Abrir el diálogo de accesos directos"
+   },
+   "outlineTab": {
+      "description": "",
+      "message": "HTML5 Outline"
+   },
+   "pinMenuLabel": {
+      "description": "",
+      "message": "abrir automáticamente"
+   },
+   "pinPanelByDomainLabel": {
+      "description": "",
+      "message": "abrir siempre para este dominio"
+   },
+   "pinPanelByURLLabel": {
+      "description": "",
+      "message": "abrir siempre para esta URL"
+   },
+   "pinPanelLabel": {
+      "description": "",
+      "message": "abrir automáticamente"
+   },
+   "potentiallyHidden": {
+      "description": "",
+      "message": "potencialmente oculto"
+   },
+   "potentiallyHiddenPlural": {
+      "description": "",
+      "message": "potencialmente ocultos"
+   },
+   "privacyPolicyMenuLink": {
+      "description": "",
+      "message": "privacidad"
+   },
+   "refreshResultsMenuLink": {
+      "description": "",
+      "message": "recargar resultados"
+   },
+   "releaseNotesMenuLink": {
+      "description": "",
+      "message": "últimos cambios"
+   },
+   "repeatedLandmark": {
+      "description": "",
+      "message": "is repeated"
+   },
+   "repeatedUniqueLandmark": {
+      "description": "",
+      "message": "must be unique"
+   },
+   "resizePanelAriaLabel": {
+      "description": "",
+      "message": "utilice las teclas de flecha para aumentar o reducir la anchura del panel"
+   },
+   "resultsListLabel": {
+      "description": "",
+      "message": "encabezados"
+   },
+   "revealInViewButtonAriaLabel": {
+      "description": "",
+      "message": "mostrar"
+   },
+   "saved": {
+      "description": "",
+      "message": "guardado"
+   },
+   "searchButtonLabel": {
+      "description": "",
+      "message": "búsqueda"
+   },
+   "searchInTree": {
+      "description": "",
+      "message": "Buscar en el árbol"
+   },
+   "searchLabel": {
+      "description": "",
+      "message": "buscar encabezado"
+   },
+   "settingsLabel": {
+      "description": "",
+      "message": "configuración"
+   },
+   "shortcutCancelButton": {
+      "description": "",
+      "message": "cancelar edición"
+   },
+   "shortcutEditButton": {
+      "description": "",
+      "message": "editar acceso directo"
+   },
+   "shortcutEditLabel": {
+      "description": "",
+      "message": "pulsar cualquier tecla (se puede combinar con las teclas modificadoras 'control', 'shift', 'alt' o 'meta')"
+   },
+   "shortcutErrorMessage": {
+      "description": "",
+      "message": "acceso directo ya utilizado"
+   },
+   "shortcutHintMessage": {
+      "description": "",
+      "message": "pulse cualquier tecla"
+   },
+   "shortcutNotDefined": {
+      "description": "",
+      "message": "aun sin definir"
+   },
+   "shortcutResetButton": {
+      "description": "",
+      "message": "restablecer acceso directo al predeterminado"
+   },
+   "shortcutSaveButton": {
+      "description": "",
+      "message": "guardar acceso directo"
+   },
+   "shortcuts": {
+      "description": "",
+      "message": "atajos de teclado"
+   },
+   "shortcutsPanelDescription": {
+      "description": "",
+      "message": "Esta es la lista de atajos de teclado asociados a las funciones de la extensión. Puede modificar los existentes y adaptarlos a sus necesidades. Se puede combinar más de una tecla en un atajo. Sólo se permiten letras, números, <kbd class='shortcut'>shift</kbd> y algunos caracteres: <kbd class='shortcut'>.</kbd>, <kbd class='shortcut'>,</kbd>, <kbd class='shortcut'>:</kbd>, <kbd class='shortcut'>;</kbd> ,<kbd class='shortcut'>/</kbd>, <kbd class='shortcut'><</kbd>, <kbd class='shortcut'>></kbd>, <kbd class='shortcut'>arrowLeft</kbd>, <kbd class='shortcut'>arrowRight</kbd>, <kbd class='shortcut'>arrowUp</kbd>, <kbd class='shortcut'>arrowDown</kbd>."
+   },
+   "shortcutsPanelDescriptionBottom": {
+      "description": "",
+      "message": "Si tiene sugerencias sobre la función de accesos directos, abra un issue en <a href='https://github.com/gerardkieffer/HeadingsChecker' target='_blank'>GitHub</a>."
+   },
+   "switchPositionLabel": {
+      "description": "",
+      "message": "cambiar posición"
+   },
+   "switchToLeft": {
+      "description": "",
+      "message": "mover el panel a la izquierda"
+   },
+   "switchToRight": {
+      "description": "",
+      "message": "mover el panel a la derecha"
+   },
+   "toggleTreeNodesByLevel": {
+      "description": "",
+      "message": "Contraer o expandir los nodos del árbol por nivel de encabezado"
+   },
+   "topLevelLandmarkError": {
+      "description": "",
+      "message": "must be at top level"
+   },
+   "updatePanelPosition": {
+      "description": "",
+      "message": "Actualizar posición del panel (izquierda - derecha)"
+   },
+   "visible": {
+      "description": "",
+      "message": "visibles"
+   },
+   "wrongHierarchy": {
+      "description": "",
+      "message": "Error en la jerarquía de niveles"
+   }
+}

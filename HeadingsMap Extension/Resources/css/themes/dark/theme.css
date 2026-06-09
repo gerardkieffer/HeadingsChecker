@@ -1,0 +1,263 @@
+.dark-theme #headingsMapWrapper,
+.dark-theme #headingsMapWrapper .results .tree-results,
+.dark-theme #headingsMapWrapper .results .tree-results ul,
+.dark-theme #headingsMapWrapper li,
+.dark-theme #headingsMapWrapper .results.active .tree-root,
+.dark-theme #headingsMapWrapper .tab-button,
+.dark-theme .tab-button,
+.dark-theme #headingsMapWrapper .context-menu ul,
+.dark-theme #headingsMapWrapper .dropdown-panel,
+.dark-theme #headingsMapWrapper .fixed-tab-content-start,
+.dark-theme #headingsMapWrapper .fixed-tab-content-end {
+    color: #f7f7fa;
+}
+
+.dark-theme,
+.dark-theme.headingsMap-body,
+.dark-theme #headingsMapWrapper,
+.dark-theme #headingsMapWrapper .results .tree-results,
+.dark-theme #headingsMapWrapper .results .tree-results ul,
+.dark-theme #headingsMapWrapper .results .tree-results li:nth-last-child(1),
+.dark-theme #headingsMapWrapper .menu-trigger,
+.dark-theme #headingsMapWrapper .results.active,
+.dark-theme #headingsMapWrapper .context-menu .arrow,
+.dark-theme #headingsMapWrapper .context-menu ul,
+.dark-theme #headingsMapWrapper .context-menu li:first-child:after,
+.dark-theme .fixed-tab-content-start-utils,
+.dark-theme .dropdown-panel li{
+    background-color: #1a1a19 !important;
+}
+
+.dark-theme #headingsMapWrapper p,
+.dark-theme #headingsMapWrapper a,
+.dark-theme #headingsMapWrapper .no-headed,
+.dark-theme #headingsMapWrapper .no-landmarks-error,
+.dark-theme #headingsMapWrapper .repeated-landmarks-error,
+.dark-theme #headingsMapWrapper .not-top-level-error,
+.dark-theme #headingsMapWrapper .repeated-unique-landmarks-error {
+    color: #f7f7fa;
+}
+
+.dark-theme #headingsMapWrapper .tab-button,
+.dark-theme .tab-button,
+.dark-theme #headingsMapWrapper .panel-results,
+.dark-theme #headingsMapWrapper .context-menu .arrow,
+.dark-theme #headingsMapWrapper .context-menu ul,
+.dark-theme #headingsMapWrapper .context-menu li:first-child:after,
+.dark-theme #headingsMapWrapper .dropdown-panel,
+.dark-theme #headingsMapWrapper .combobox-button,
+.dark-theme #headingsMapWrapper .combobox-input,
+.dark-theme #headingsMapWrapper .visibility-legend,
+.dark-theme div[role=tablist] {
+    border-color: #f7f7fa !important;
+}
+
+.dark-theme #headingsMapWrapper .combobox.search-text-active .clear-text-button {
+    outline-color: #f7f7fa !important;
+}
+
+.dark-theme #headingsMapWrapper .tab-button:focus,
+.dark-theme .tab-button:focus,
+.dark-theme #headingsMapWrapper .tab-button[aria-selected=true],
+.dark-theme .tab-button[aria-selected=true] {
+    border-bottom-color: #f7f7fa !important;
+}
+
+.dark-theme #headingsMapWrapper .dropdown-panel li:hover,
+.dark-theme #headingsMapWrapper .dropdown-panel li.focused,
+.dark-theme #headingsMapWrapper .dropdown-panel li[aria-selected=true],
+.dark-theme #headingsMapWrapper .visibility-legend {
+    background-color: #2a2030 !important;
+}
+
+.dark-theme #headingsMapWrapper .results a.active-element {
+    border-right-color: rgba(127,37,187,0.4);
+    background-color: rgba(127,37,187,0.25);
+    border-right: 2px solid rgba(127,37,187,0.35);
+}
+
+.dark-theme #extension_title {
+    background-image: url(./themes/dark/icons/headingsMap40_light.png);
+}
+
+.dark-theme .tooltip-error {
+    background-color: #800 !important;
+}
+
+.dark-theme .main-menu.menu-trigger  {
+    background-image: url(./themes/dark/icons/menu-dots.png);
+}
+
+.dark-theme #headingsMapWrapper #headingsMap_refresh {
+    background-image: url(./themes/dark/icons/refresh.png);
+}
+
+.dark-theme #headingsMapWrapper #settings {
+    background-image: url(./themes/dark/icons/settings.png);
+}
+
+.dark-theme #headingsMapWrapper #switchPosition {
+    background-image: url(./themes/dark/icons/position-right.png);
+}
+
+.dark-theme #headingsMapWrapper #shortcutsId {
+    background-image: url(./themes/dark/icons/shortcut.png);
+}
+
+.dark-theme #headingsMapWrapper #help {
+    background-image: url(./themes/dark/icons/help.png);
+}
+
+.dark-theme #headingsMapWrapper #headingsMap_release_notes {
+    background-image: url(./themes/dark/icons/releasenotes.png);
+}
+
+.dark-theme #headingsMapWrapper #headingsMap_privacy_policy {
+    background-image: url(./themes/dark/icons/privacy.png);
+}
+
+.dark-theme #headingsMapWrapper #contribute {
+    background-image: url(./themes/dark/icons/contribute.png);
+}
+
+.dark-theme .headingsMap_closer {
+    background-image: url(./themes/dark/icons/close.png);
+}
+
+.dark-theme .hiddenElementsCounter,
+.dark-theme .tooltip-content .hidden-element,
+.dark-theme .hidden-header-information,
+.dark-theme .document_selector .hidden-element {
+    background-image: url(./themes/dark/icons/hidden.png);
+}
+
+.dark-theme #headingsMapWrapper .results a[href] .anchor-icon,
+.dark-theme .tooltip-content .anchor-icon  {
+    background-image: url(./themes/dark/icons/anchor.png);
+}
+
+.dark-theme .custom-scrollbar::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 3px rgba(247,247,250,0.15);
+    background-color: #3a2d4a;
+}
+
+.dark-theme .custom-scrollbar::-webkit-scrollbar {
+    background-color: #3a2d4a;
+}
+
+.dark-theme .tooltip,
+.dark-theme .tooltip .arrow::after {
+    background-color: #1a1a19;
+    color: #f7f7fa;
+    border-color: #3a2d4a !important;
+    border-width: 2px;
+}
+
+.dark-theme .pinned-indicator {
+    background-image: url(./themes/dark/icons/pinned-off.png);
+}
+
+.dark-theme .headingsMap-reveal {
+    background-image: url(./themes/dark/icons/visible.png);
+}
+
+.dark-theme .headingsMap-reveal[aria-pressed=true] {
+    background-image: url(./themes/dark/icons/visible-hide.png);
+}
+
+.dark-theme .search-button {
+    background-image: url(./themes/dark/icons/lens.png);
+}
+
+.dark-theme .search-button-close {
+    background-image: url(./themes/dark/icons/close-simple.png);
+}
+
+.dark-theme .clear-text-button {
+    background-image: url(./themes/dark/icons/close-simple.png);
+}
+
+.dark-theme .pinned--on .pinned-indicator,
+.dark-theme .pinned-to-tab--on .pinned-indicator,
+.dark-theme .pinned-by-URL--on .pinned-indicator,
+.dark-them e.pinned-by-domain--on .pinned-indicator {
+    background-image: url(./themes/dark/icons/pinned-on.png);
+}
+
+.dark-theme .pinned--off #pin-button,
+.dark-theme .pinned-to-tab--off .pinned-indicator,
+.dark-theme .pinned-by-URL--off .pin-by-URL-button,
+.dark-theme .pinned-by-domain--off .pin-by-domain-button {
+    background-image: url(./themes/dark/icons/pinned-off.png);
+}
+
+.dark-theme .pinned--on #pin-button,
+.dark-theme .pinned-by-URL--on .pin-by-URL-button,
+.dark-theme .pinned-by-domain--on .pin-by-domain-button {
+    background-image: url(./themes/dark/icons/pinned-on.png);
+}
+
+.dark-theme .results a:focus,
+.dark-theme .results a.focused,
+.dark-theme .active-item {
+    box-shadow: inset 0 0 3px rgba(247,247,250,0.8);
+}
+
+.dark-theme .extension-panel-resizer {
+    background-color: #3a2d4a;
+}
+
+.dark-theme .extension-panel-resizer:before {
+    border-left: 1px dotted rgba(247,247,250,0.5);
+    border-right: 1px dotted rgba(247,247,250,0.5);
+}
+
+.dark-theme .copy-button {
+    background-image: url(./themes/dark/icons/copy.png);
+}
+
+.dark-theme .collapse-trigger {
+    background-image: url(./themes/dark/icons/expanded.png);
+}
+
+.dark-theme .collapse-trigger.collapse-trigger--collapsed {
+    background-image: url(./themes/dark/icons/collapsed.png);
+}
+
+.dark-theme .headingsMap-highlighted {
+    outline: 2px solid #c084fc;
+}
+
+.dark-theme #headingsMapWrapper .elements-search .search-results-list {
+    background-color: #2a2030 !important;
+}
+
+.dark-theme .search-field {
+    background-color: #ccc8d8;
+}
+
+.dark-theme .combobox-button:after,
+.dark-theme .combobox-icon {
+    background-image: url(./themes/dark/icons/collapsed.png);
+}
+
+
+/* Tree ---------------------------------------------------- */
+
+.dark-theme.show-error #headingsMapWrapper .head-error,
+.dark-theme.show-error #headingsMapWrapper .no-headed,
+.dark-theme.show-error #headingsMapWrapper .no-landmarks-error,
+.dark-theme.show-error #headingsMapWrapper .repeated-landmarks-error,
+.dark-theme.show-error #headingsMapWrapper .not-top-level-error,
+.dark-theme.show-error #headingsMapWrapper .repeated-unique-landmarks-error,
+.dark-theme.show-error.show-head-error-h1 #headingsMapWrapper .head-error-h1 {
+    background: linear-gradient(to right, transparent 0, transparent 22px, #800 20px, #800 100%) !important;
+}
+
+.dark-theme .tree-results .collapse-trigger {
+    background-image: url(./themes/dark/icons/expanded.png), url(icons/tree_d.gif);
+}
+
+.dark-theme .tree-results .collapse-trigger.collapse-trigger--collapsed {
+    background-image: url(./themes/dark/icons/collapsed.png);
+}

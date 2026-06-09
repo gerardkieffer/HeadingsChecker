@@ -1,0 +1,334 @@
+{
+   "active": {
+      "description": "",
+      "message": "Aktywny"
+   },
+   "analysisAriaLabel": {
+      "description": "",
+      "message": "Analiza"
+   },
+   "anchor": {
+      "description": "",
+      "message": "Link"
+   },
+   "ariaLiveCollapsedLevel": {
+      "description": "",
+      "message": "nagłówki w drzewie pod poziomem {level} zwinięte"
+   },
+   "ariaLiveExpandedLevel": {
+      "description": "",
+      "message": "nagłówki w drzewie pod poziomem {level} rozwinięte"
+   },
+   "ariaLiveHeadingsCopied": {
+      "description": "",
+      "message": "struktura skopiowana do schowka"
+   },
+   "ariaLiveSwitchedToLeft": {
+      "description": "",
+      "message": "dołączony po lewej stronie widoku"
+   },
+   "ariaLiveSwitchedToRight": {
+      "description": "",
+      "message": "dołączone po prawej stronie widoku"
+   },
+   "clearText": {
+      "description": "",
+      "message": "resetowanie tekstu"
+   },
+   "clickTheAnchor": {
+      "description": "",
+      "message": "Kliknij ikonkę, aby skopiować link"
+   },
+   "closeButton": {
+      "description": "",
+      "message": "Zamknij"
+   },
+   "closeButtonAriaLabel": {
+      "description": "",
+      "message": "Zamknij panel"
+   },
+   "closeSearchButtonLabel": {
+      "description": "",
+      "message": "zamknij wyszukiwanie"
+   },
+   "collapseLabel": {
+      "description": "",
+      "message": "upadek"
+   },
+   "collapseTreeNode": {
+      "description": "",
+      "message": "Zagnieżdżone elementy"
+   },
+   "collapserDescription": {
+      "description": "",
+      "message": "Aby zwinąć/rozwinąć drzewo nagłówków według poziomu nagłówka"
+   },
+   "contributeMenuLink": {
+      "description": "",
+      "message": "wsparcie"
+   },
+   "copyButtonLabel": {
+      "description": "",
+      "message": "Kopiuj strukturę nagłówków"
+   },
+   "documentSelectorTitle": {
+      "description": "",
+      "message": "Wybierz stronę/ramkę, aby uzyskać jego strukturę nagłówków"
+   },
+   "documents": {
+      "description": "",
+      "message": "Strona/ramka"
+   },
+   "element": {
+      "description": "",
+      "message": "Element"
+   },
+   "emptyHeader": {
+      "description": "",
+      "message": "Pusty nagłówek"
+   },
+   "error": {
+      "description": "",
+      "message": "Błąd"
+   },
+   "errorNoHeadingSection": {
+      "description": "",
+      "message": "Błąd: sekcja bez nagłówków"
+   },
+   "expandLabel": {
+      "description": "",
+      "message": "rozwinąć"
+   },
+   "expandTreeNode": {
+      "description": "",
+      "message": "Zagnieżdżone elementy"
+   },
+   "extensionDescription": {
+      "description": "Opis rozszerzenia",
+      "message": "Aby wyświetlać, przeglądać i przeprowadzać audyt (pod kątem dostępności i SEO) struktury nagłówków"
+   },
+   "extensionName": {
+      "description": "Nazwa rozszerzenia.",
+      "message": "HeadingsChecker"
+   },
+   "focusHeadingsTree": {
+      "description": "",
+      "message": "Skupienie ostatniego skupionego elementu w drzewie wyników"
+   },
+   "generatedBy": {
+      "description": "",
+      "message": "Wygenerowane przez"
+   },
+   "headersTab": {
+      "description": "",
+      "message": "Struktura nagłówków"
+   },
+   "heading": {
+      "description": "",
+      "message": "Nagłówek"
+   },
+   "headingLevel": {
+      "description": "",
+      "message": "Poziom nagłówka"
+   },
+   "helpLabel": {
+      "description": "",
+      "message": "Pomoc"
+   },
+   "helpWithAccessibility": {
+      "description": "",
+      "message": "Accessibilité numérique Luxembourg"
+   },
+   "helpWithAccessibilityOnLinkedIn": {
+      "description": "",
+      "message": "Accessibilité numérique Luxembourg, opens in new window"
+   },
+   "identifyHeadersInPage": {
+      "description": "",
+      "message": "Ujawnianie elementów na stronie"
+   },
+   "landmarksTab": {
+      "description": "",
+      "message": "Landmarks"
+   },
+   "maniMenuLabel": {
+      "description": "",
+      "message": "Menu"
+   },
+   "missingH1": {
+      "description": "",
+      "message": "Brakujący nagłówek H1"
+   },
+   "noHeadings": {
+      "description": "",
+      "message": "Brak nagłówków"
+   },
+   "number": {
+      "description": "",
+      "message": "numer"
+   },
+   "openSettingsDialog": {
+      "description": "",
+      "message": "Otwórz okno dialogowe ustawień"
+   },
+   "openShortcutsDialog": {
+      "description": "",
+      "message": "Otwórz okno dialogowe skrótów"
+   },
+   "outlineTab": {
+      "description": "",
+      "message": "HTML5 Outline"
+   },
+   "pinMenuLabel": {
+      "description": "",
+      "message": "Ustaw otwieranie"
+   },
+   "pinPanelByDomainLabel": {
+      "description": "",
+      "message": "Zawsze otwieraj dla tej domeny"
+   },
+   "pinPanelByURLLabel": {
+      "description": "",
+      "message": "Zawsze otwieraj dla tego linku"
+   },
+   "pinPanelLabel": {
+      "description": "",
+      "message": "Otwieranie panelu"
+   },
+   "potentiallyHidden": {
+      "description": "",
+      "message": "Prawdopodobnie ukryte elementy"
+   },
+   "potentiallyHiddenPlural": {
+      "description": "",
+      "message": "Prawdopodobnie ukryte elementy"
+   },
+   "privacyPolicyMenuLink": {
+      "description": "",
+      "message": "polityka prywatności"
+   },
+   "refreshResultsMenuLink": {
+      "description": "",
+      "message": "odśwież wyniki"
+   },
+   "releaseNotesMenuLink": {
+      "description": "",
+      "message": "informacje o wydaniach"
+   },
+   "repeatedLandmark": {
+      "description": "",
+      "message": "is repeated"
+   },
+   "repeatedUniqueLandmark": {
+      "description": "",
+      "message": "must be unique"
+   },
+   "resizePanelAriaLabel": {
+      "description": "",
+      "message": "użyj klawiszy strzałek, aby zwiększyć lub zmniejszyć szerokość panelu"
+   },
+   "resultsListLabel": {
+      "description": "",
+      "message": "nagłówki"
+   },
+   "revealInViewButtonAriaLabel": {
+      "description": "",
+      "message": "ujawniające"
+   },
+   "saved": {
+      "description": "",
+      "message": "zapisany"
+   },
+   "searchButtonLabel": {
+      "description": "",
+      "message": "wyszukiwanie"
+   },
+   "searchInTree": {
+      "description": "",
+      "message": "Szukaj w drzewie"
+   },
+   "searchLabel": {
+      "description": "",
+      "message": "nagłówek wyszukiwania"
+   },
+   "settingsLabel": {
+      "description": "",
+      "message": "ustawienia"
+   },
+   "shortcutCancelButton": {
+      "description": "",
+      "message": "anuluj edycję skrótu"
+   },
+   "shortcutEditButton": {
+      "description": "",
+      "message": "edytuj skrót"
+   },
+   "shortcutEditLabel": {
+      "description": "",
+      "message": "naciśnij dowolny klawisz (może być połączony z klawiszami modyfikującymi 'control', 'shift', 'alt' lub 'meta')"
+   },
+   "shortcutErrorMessage": {
+      "description": "",
+      "message": "skrót już użyty"
+   },
+   "shortcutHintMessage": {
+      "description": "",
+      "message": "naciśnij dowolny klawisz"
+   },
+   "shortcutNotDefined": {
+      "description": "",
+      "message": "jeszcze nie zdefiniowany"
+   },
+   "shortcutResetButton": {
+      "description": "",
+      "message": "zresetuj skrót do domyślnego"
+   },
+   "shortcutSaveButton": {
+      "description": "",
+      "message": "zapisz skrót"
+   },
+   "shortcuts": {
+      "description": "",
+      "message": "skróty klawiaturowe"
+   },
+   "shortcutsPanelDescription": {
+      "description": "",
+      "message": "To jest lista skrótów klawiaturowych powiązanych z funkcjami rozszerzenia. Istniejące skróty można modyfikować i dostosowywać do własnych potrzeb. W jednym skrócie można połączyć więcej niż jeden klawisz. Dozwolone są tylko litery, cyfry, klawisz <kbd class='shortcut'>shift</kbd> i niektóre znaki: <kbd class='shortcut'>.</kbd>, <kbd class='shortcut'>,</kbd>, <kbd class='shortcut'>:</kbd>, <kbd class='shortcut'>;</kbd> ,<kbd class='shortcut'>/</kbd>, <kbd class='shortcut'><</kbd>, <kbd class='shortcut'>></kbd>, <kbd class='shortcut'>arrowLeft</kbd>, <kbd class='shortcut'>arrowRight</kbd>, <kbd class='shortcut'>arrowUp</kbd>, <kbd class='shortcut'>arrowDown</kbd>."
+   },
+   "shortcutsPanelDescriptionBottom": {
+      "description": "",
+      "message": "Jeśli masz sugestie dotyczące funkcji skrótów, otwórz zgłoszenie na <a href='https://github.com/gerardkieffer/HeadingsChecker' target='_blank'>GitHub</a>."
+   },
+   "switchPositionLabel": {
+      "description": "",
+      "message": "zmiana pozycji"
+   },
+   "switchToLeft": {
+      "description": "",
+      "message": "Przełącz panel na lewo"
+   },
+   "switchToRight": {
+      "description": "",
+      "message": "Przełącz panel na prawo"
+   },
+   "toggleTreeNodesByLevel": {
+      "description": "",
+      "message": "Zwiń lub rozwiń węzły drzewa według poziomu nagłówka"
+   },
+   "topLevelLandmarkError": {
+      "description": "",
+      "message": "must be at top level"
+   },
+   "updatePanelPosition": {
+      "description": "",
+      "message": "Zaktualizuj pozycję panelu (lewy - prawy)"
+   },
+   "visible": {
+      "description": "",
+      "message": "Widoczne elementy"
+   },
+   "wrongHierarchy": {
+      "description": "",
+      "message": "Błędna hierarchia nagłówków"
+   }
+}

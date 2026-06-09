@@ -1,0 +1,59 @@
+{
+   "action": {
+      "default_icon": {
+         "48": "icons/headingsMap48.png"
+      },
+      "default_title": "HeadingsChecker"
+   },
+   "author": "Gérard Kieffer",
+   "background": {
+      "service_worker": "service-worker.js"
+   },
+   "content_scripts": [
+      {
+         "all_frames": true,
+         "css": [
+            "css/inDocumentStyles.css"
+         ],
+         "js": [
+            "content_scripts/headingsmap.js"
+         ],
+         "matches": [
+            "<all_urls>"
+         ],
+         "run_at": "document_end"
+      }
+   ],
+   "default_locale": "en",
+   "description": "__MSG_extensionDescription__",
+   "host_permissions": [
+      "<all_urls>"
+   ],
+   "icons": {
+      "128": "icons/headingsMap128_with_margin.png",
+      "48": "icons/headingsMap48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAy25UY5K3FEO6IMQuXIO4puZXVjmksKplo2X8lIBW3w79jFEBXegRYo6JWia0Tl7QQtffvjQXDoyXszDJTb9yKLBFIPjitI+xHFsl+dTeaJvaX0yu4tNQoJ4NE9zEsUJFP2Qdcx82d/ssGzvvyPjNfOBeyQKZQrjzUv7qgQqRXBitrvQMkItB14OKLM9OELckDlsp6FFaz+2oo2HoehSl3y4HCGO1hMsGM8tIrQ7OkrxQxyK5kJC8bYXhzrqk/m5uIxbAVOIX5h+7PJZExIGe57eEhAPFXlpkM2HKIckWDdFe+iGCFd4qVHAZzgr/jQknZXhzFVzC0bGKJGT1B9QKIwIDAQAB",
+   "manifest_version": 3,
+   "name": "__MSG_extensionName__",
+   "permissions": [
+      "activeTab",
+      "storage",
+      "webNavigation"
+   ],
+   "version": "1.0.0",
+   "web_accessible_resources": [
+      {
+         "extension_ids": [],
+         "matches": [
+            "<all_urls>"
+         ],
+         "resources": [
+            "html/*",
+            "css/*",
+            "getFrameId",
+            "_locales/*"
+         ]
+      }
+   ]
+}

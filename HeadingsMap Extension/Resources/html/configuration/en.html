@@ -1,0 +1,342 @@
+<html lang="en">
+<head><title>Options</title></head>
+<body>
+
+<div class="content">
+    <h1 id="settings-header" class="headingsmap-exclude">Settings</h1>
+
+    <div class="contents settings-content">
+        <fieldset class="fieldset">
+            <legend>General</legend>
+            <div>
+                <label for="showHeadError">
+                    <input type="checkbox" name="showHeadError" id="showHeadError"/>
+                    Identify errors
+                </label>
+                <label for="highLightElements">
+                    <input type="checkbox" name="highLightElements" id="highLightElements"/>
+                    Highlight on click
+                </label>
+                <label for="showAnchors">
+                    <input type="checkbox" name="showAnchors" id="showAnchors" data-callback="refresh"/>
+                    Identify anchors
+                </label>
+                <label for="darkTheme">
+                    <input type="checkbox" name="darkTheme" id="darkTheme" data-callback="setTheme"/>
+                    Dark mode
+                </label>
+                <label for="savePanelWidthOnResize">
+                    <input type="checkbox" name="savePanelWidthOnResize" id="savePanelWidthOnResize"
+                           data-callback="updateInitialPanelWidth"/>
+                    Save width on resize
+                </label>
+                <label for="normalWrap">
+                    <input type="checkbox" name="normalWrap" id="normalWrap"/>
+                    Wrap long text
+                </label>
+                <label for="showTooltip">
+                    <input type="checkbox" name="showTooltip" id="showTooltip" data-callback="setLinksBehavior"/>
+                    Show tooltip info
+                </label>
+                <label for="viewportIndicator">
+                    <input type="checkbox" name="viewportIndicator" id="viewportIndicator" data-callback="refresh"/>
+                    Relate with viewport
+                </label>
+                <label for="hideTreeResultsTools">
+                    <input type="checkbox" name="hideTreeResultsTools" id="hideTreeResultsTools"/>
+                    Hide tools (search, etc.)
+                </label>
+
+                <p class="note">
+                    <label for="language">
+                        Language
+                        <select name="language" id="language">
+                        </select>
+                    </label>
+                    The change is applied after restarting the extension (closing and reopening).
+                </p>
+                <input type="hidden" name="initialPanelWidth" id="initialPanelWidth"/>
+            </div>
+            <div class="custom-scrollbar settings-information">
+                <h2>Details</h2>
+                <ul>
+                    <li><strong>Identify errors</strong>: when active, it highlights the tree item that corresponds
+                        with a header that has an error.
+                    </li>
+                    <li><strong>Highlight on click</strong>: when clicking the tree item, it highlights (for a few
+                        seconds) with an outline the header in the document.
+                    </li>
+                    <li><strong>Identify anchors</strong>: if the header can be used as anchor, that information is
+                        considered.
+                    </li>
+                    <li><strong>Dark mode</strong>: when used, it changes the styles of the tool to have dark
+                        background
+                        and light foreground colors.
+                    </li>
+                    <li><strong>Save width on resize</strong>: if it is checked, and if the panel is resized, the
+                        new
+                        width is saved, so next time the tool is used, it keeps it.
+                    </li>
+                    <li><strong>Wrap long text</strong>: by default, the text in the tree items is truncated. When
+                        activating this option, it adapts to multiple lines if needed.
+                    </li>
+                    <li><strong>Show tooltip info</strong>: when it is active, when moving the pointer over the
+                        tree, it displays a tooltip with information.
+                    </li>
+                    <li><strong>Relate with viewport</strong>: when it is active, it shows a light background in the
+                        items that correspond with the headers that are in the viewport area.
+                    </li>
+                    <li><strong>Hide tools</strong>: it hides buttons simplifying the view of the panel.</li>
+                    <li><strong>Language</strong>: it switches the language. The new language is not applied until
+                        next time the extension is reopen.
+                    </li>
+                </ul>
+            </div>
+        </fieldset>
+        <fieldset class="fieldset">
+            <legend>Headers structure</legend>
+            <div>
+                <label for="showHeadErrorH1">
+                    <input type="checkbox" name="showHeadErrorH1" id="showHeadErrorH1"/>
+                    Error if not initial h1
+                </label>
+                <label for="showHeadLevels">
+                    <input type="checkbox" name="showHeadLevels" id="showHeadLevels"/>
+                    Show heading level
+                </label>
+                <label for="showEmptyHeadings">
+                    <input type="checkbox" name="showEmptyHeadings" id="showEmptyHeadings" data-callback="refresh"/>
+                    Consider empty headings
+                </label>
+                <label for="showHiddenHeaders">
+                    <input type="checkbox" name="showHiddenHeaders" id="showHiddenHeaders" data-callback="refresh"/>
+                    Consider hidden headers
+                </label>
+                <label for="showAriaLabelContent">
+                    <input type="checkbox" name="showAriaLabelContent" id="showAriaLabelContent"
+                           data-callback="refresh"/>
+                    Consider "aria" content
+                </label>
+            </div>
+            <div class="custom-scrollbar settings-information">
+                <h2>Details</h2>
+                <ul>
+                    <li><strong>Error if not initial h1</strong>: when it is active, it highlights as error if the first header is not h1. It needs "Identify errors" to be active.</li>
+                    <li><strong>Show header level</strong>: it shows in the tree the level of the header before its text.</li>
+                    <li><strong>Consider empty headers</strong>: it makes the empty headers to be considered in the tree and its hierarchy.</li>
+                    <li><strong>Consider hidden headers</strong>: it identifies and shows the information of all headers, no matter if they are hidden.</li>
+                    <li><strong>Consider "aria" content</strong>: if the headers use <em>aria-label</em> or <em>aria-labelledby</em>
+                        attributes, the tool can take their value and use it as text content (the reasoning is that
+                        screen-readers may access to them and use them as content).
+                    </li>
+                </ul>
+            </div>
+
+        </fieldset>
+        <fieldset class="fieldset">
+            <legend>Landmarks</legend>
+            <div>
+                <label for="isLandmarksTestActive">
+                    <input type="checkbox" name="isLandmarksTestActive" id="isLandmarksTestActive"
+                           data-callback="refresh disableFields"
+                           data-related-fields="showNonTopLevelLandmarksError showRepeatedLandmarksError showRepeatedUniqueLandmarksError"/>
+                    Landmarks analysis active
+                </label>
+
+                <label></label>
+                <label for="showNonTopLevelLandmarksError">
+                    <input type="checkbox" name="showNonTopLevelLandmarksError" id="showNonTopLevelLandmarksError" data-callback="refresh"/>
+                    Error if <code>banner</code>, <code>complementary</code>, <code>contentinfo</code> or <code>main</code> are not top level landmarks
+                </label>
+                <label for="showRepeatedUniqueLandmarksError">
+                    <input type="checkbox" name="showRepeatedUniqueLandmarksError" id="showRepeatedUniqueLandmarksError" data-callback="refresh"/>
+                    Error if more than one <code>banner</code>, <code>contentinfo</code>, or <code>main</code>
+                </label>
+                <label for="showRepeatedLandmarksError">
+                    <input type="checkbox" name="showRepeatedLandmarksError" id="showRepeatedLandmarksError" data-callback="refresh"/>
+                    Error if repeated landmarks without label, or with same label
+                </label>
+            </div>
+            <div class="custom-scrollbar settings-information">
+                <h2>Details</h2>
+                <ul>
+                    <li><strong>Landmarks analysis active</strong>: It activates or deactivates the landmarks analysis. When the analysis is active, both headings and landmarks analysis appear as tabs.</li>
+                    <li><strong>Error if <code>banner</code>, <code>complementary</code>, <code>contentinfo</code> or <code>main</code> are not top level landmarks</strong>: These landmarks should be top-level landmarks.</li>
+                    <li><strong>Error if more than one <code>banner</code>, <code>contentinfo</code>, or <code>main</code></strong>: Each page may have at most one of each type.</li>
+                    <li><strong>Error if repeated landmarks without label, or with same label</strong>: When there are more than one landmark with same role, they should include a label to differentiate them.</li>
+                </ul>
+            </div>
+
+        </fieldset>
+        <fieldset class="fieldset">
+            <legend>
+                HTML 5 Outline
+            </legend>
+            <div>
+                <label for="isOutlineTestActive">
+                    <input type="checkbox" name="isOutlineTestActive" id="isOutlineTestActive"
+                           data-callback="refresh disableFields"
+                           data-related-fields="showOutLevels showOutElem showHiddenSections"/>
+                    Activate analysis
+                </label>
+                <p class="note">There are no browsers or assistive technology with native implementations of W3C
+                    Outline algorithm. Therefore it cannot be relied upon to convey document structure to users, and
+                    authors should use heading rank for doing it (<a
+                            href="https://www.w3.org/TR/2017/REC-html52-20171214/sections.html#creating-an-outline"
+                            target="_blank">HTML 5.2 Creating an outline</a>)
+                </p>
+
+                <label for="showOutLevels">
+                    <input type="checkbox" name="showOutLevels" id="showOutLevels"/>
+                    Show section index
+                </label>
+                <label for="showOutElem">
+                    <input type="checkbox" name="showOutElem" id="showOutElem"/>
+                    Show section tag
+                </label>
+                <label for="showHiddenSections">
+                    <input type="checkbox" name="showHiddenSections" id="showHiddenSections"
+                           data-callback="refresh updateActiveDocument"/>
+                    Consider hidden sections *
+                </label>
+            </div>
+            <p class="note">* When "consider hidden sections" option is active, the analysis may have performance
+                issues in long documents</p>
+
+            <div class="custom-scrollbar settings-information">
+                <h2>Details</h2>
+                <ul>
+                    <li><strong>Activate analysis</strong>: extracting the document outline can impact in the
+                        performance, so its execution is optional and deactivated by default. When it is active, both
+                        analysis (headings and HTML 5 Outline) appear as tabs in the panel.
+                    </li>
+                    <li><strong>Show section index</strong>: it shows in the section index before its text.</li>
+                    <li><strong>Show section tag</strong>: it includes the section tag as part of the content in the
+                        tree.
+                    </li>
+                    <li><strong>Consider hidden sections</strong>: it identifies and shows the information of all
+                        sections, no matter if they are hidden.
+                    </li>
+                </ul>
+            </div>
+        </fieldset>
+
+    </div>
+    <style>
+        #dialog-panel .content {
+            height: 100%;
+        }
+
+        #dialog-panel .settings-content {
+            overflow: hidden;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #dialog-panel .settings-content > div {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        #dialog-panel .settings-information {
+            overflow: auto;
+        }
+
+        #dialog-panel .tab-button {
+            width: 33.3%;
+        }
+
+        #dialog-panel .tabs {
+            margin-top: 30px;
+        }
+
+        #dialog-panel .tab-button {
+            max-width: none;
+        }
+
+        #dialog-panel .tab-button:not([aria-selected=true]) {
+            margin-bottom: 1px;
+        }
+
+        #dialog-panel div[role=tabpanel].active {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        #dialog-panel .fieldset {
+            position: relative;
+            box-sizing: border-box;
+            border: none;
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        #dialog-panel .fieldset legend {
+            font-weight: bold;
+            position: absolute;
+            top: -5000px;
+            left: -5000px;
+        }
+
+        #dialog-panel .fieldset label {
+            display: block;
+            float: left;
+            width: 49%;
+            box-sizing: border-box;
+            margin: 10px 0;
+        }
+
+        #dialog-panel .fieldset label:nth-child(2n+1) {
+            margin-right: 2%;
+        }
+
+        #dialog-panel .fieldset p {
+            border-top: 1px dotted transparent;
+        }
+
+        #dialog-panel li {
+            font-size: .9rem;
+        }
+
+        #dialog-panel .fieldset p label {
+            float: none;
+            width: auto;
+            box-sizing: border-box;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        #dialog-panel .fieldset legend label {
+            width: auto;
+            margin: auto;
+        }
+
+
+        #dialog-panel label:has([disabled]) {
+            opacity: .5;
+        }
+
+        #dialog-panel .fieldset select {
+            font-weight: normal;
+        }
+
+        #dialog-panel .fieldset label:nth-child(2n + 1) {
+            clear: left;
+        }
+
+        #dialog-panel code {
+            font-family: monospace;
+            font-size: .8em;
+            opacity: .8;
+        }
+    </style>
+</div>
+</body>
+</html>

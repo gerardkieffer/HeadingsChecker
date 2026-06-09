@@ -1,0 +1,446 @@
+<html lang="pl">
+  <head><title>Ustawienia</title></head>
+  <body>
+    <div class="content">
+      <h1 id="settings-header" class="headingsmap-exclude">Ustawienia</h1>
+
+      <div class="contents settings-content">
+        <fieldset class="fieldset">
+          <legend>Główne ustawienia</legend>
+          <div>
+            <label for="showHeadError">
+              <input type="checkbox" name="showHeadError" id="showHeadError" />
+              Pokaż błędy
+            </label>
+            <label for="highLightElements">
+              <input
+                type="checkbox"
+                name="highLightElements"
+                id="highLightElements"
+              />
+              Zaznacz po kliknięciu
+            </label>
+            <label for="showAnchors">
+              <input
+                type="checkbox"
+                name="showAnchors"
+                id="showAnchors"
+                data-callback="refresh"
+              />
+              Znajdź kotwicę
+            </label>
+            <label for="darkTheme">
+              <input
+                type="checkbox"
+                name="darkTheme"
+                id="darkTheme"
+                data-callback="setTheme"
+              />
+              Ciemny motyw
+            </label>
+            <label for="savePanelWidthOnResize">
+              <input
+                type="checkbox"
+                name="savePanelWidthOnResize"
+                id="savePanelWidthOnResize"
+                data-callback="updateInitialPanelWidth"
+              />
+              Zachowaj szerokość po zmianie wielkości okna
+            </label>
+            <label for="normalWrap">
+              <input type="checkbox" name="normalWrap" id="normalWrap" />
+              Zawijaj długi tekst
+            </label>
+            <label for="showTooltip">
+              <input
+                type="checkbox"
+                name="showTooltip"
+                id="showTooltip"
+                data-callback="setLinksBehavior"
+              />
+              Pokaż podpowiedź
+            </label>
+            <label for="viewportIndicator">
+              <input
+                type="checkbox"
+                name="viewportIndicator"
+                id="viewportIndicator"
+                data-callback="refresh"
+              />
+              Podświetl widoczne w oknie
+            </label>
+            <label for="hideTreeResultsTools">
+              <input type="checkbox" name="hideTreeResultsTools" id="hideTreeResultsTools"/>
+              Ukryj narzędzia (wyszukiwanie itp.)
+            </label>
+            <p class="note">
+              <label for="language">
+                Język
+                <select name="language" id="language"></select>
+              </label>
+              Zmiana języka jest stosowana po ponownym uruchomieniu rozszerzenia
+              (zamknięciu i ponownym otwarciu).
+            </p>
+            <input
+              type="hidden"
+              name="initialPanelWidth"
+              id="initialPanelWidth"
+            />
+          </div>
+          <div class="custom-scrollbar settings-information">
+            <h2>Szczegóły</h2>
+            <ul>
+              <li>
+                <strong>Pokaż błędy</strong>: Gdy jest zaznaczone, podświetla
+                element drzewa z błędem.
+              </li>
+              <li>
+                <strong>Zaznacz po kliknięciu</strong>: po kliknięciu elementu
+                drzewa wyświetli się ramka (przez kilka sekund) wokół nagłówka
+                na stronie internetowej.
+              </li>
+              <li>
+                <strong>Znajdź kotwicę</strong>: Jeśli nagłówek ma ID to
+                wyświetli się spinacz w panelu. Kliknięcie spinacza kopiuje link
+                do kotwicy (ID nagłówka).
+              </li>
+              <li>
+                <strong>Ciemny motyw</strong>: kiedy jest zaznaczone, panel ma
+                ciemne tło i jasne litery.
+              </li>
+              <li>
+                <strong>Zachowaj szerokość po zmianie wielkości okna</strong>:
+                jeśli jest zaznaczone, a okno zmieniło rozmiar, zachowana jest
+                szerokość panelu.
+              </li>
+              <li>
+                <strong>Zawijaj długi tekst</strong>: domyślnie tekst w
+                elementach drzewa jest obcinany. Po zaznaczeniu tej opcji
+                dostosowuje się do wielu linii, jeśli jest to konieczne.
+              </li>
+              <li>
+                <strong>Pokaż podpowiedź</strong>: gdy jest zaznaczone, po
+                przesunięciu myszy nad nagłówek, wyświetla się podpowiedź z
+                informacją.
+              </li>
+              <li>
+                <strong>Podświetl widoczne w oknie</strong>: gdy jest zaznaczone
+                pokazuje jasne tło w elementach na panelu, które odpowiadają
+                nagłówkom widocznym w oknie przeglądarki.
+              </li>
+              <li><strong>Ukryj narzędzia</strong>: ukrywa przyciski, upraszczając widok panelu.
+              </li>
+              <li>
+                <strong>Język</strong>: zmienia język. Nowy język nie jest
+                stosowany do czasu ponownego otwarcia rozszerzenia.
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+        <fieldset class="fieldset">
+          <legend>Struktury nagłówka</legend>
+          <div>
+            <label for="showHeadErrorH1">
+              <input
+                type="checkbox"
+                name="showHeadErrorH1"
+                id="showHeadErrorH1"
+              />
+              Błąd, jeśli nie ma nagłówka H1
+            </label>
+            <label for="showHeadLevels">
+              <input
+                type="checkbox"
+                name="showHeadLevels"
+                id="showHeadLevels"
+              />
+              Pokaż poziom nagłówków
+            </label>
+            <label for="showEmptyHeadings">
+              <input
+                type="checkbox"
+                name="showEmptyHeadings"
+                id="showEmptyHeadings"
+                data-callback="refresh"
+              />
+              Pokaż puste nagłówki
+            </label>
+            <label for="showHiddenHeaders">
+              <input
+                type="checkbox"
+                name="showHiddenHeaders"
+                id="showHiddenHeaders"
+                data-callback="refresh"
+              />
+              Pokaż ukryte nagłówki
+            </label>
+            <label for="showAriaLabelContent">
+              <input
+                      type="checkbox"
+                      name="showAriaLabelContent"
+                      id="showAriaLabelContent"
+                      data-callback="refresh"
+              />
+              Dodaj informację o "aria"
+            </label>
+          </div>
+          <div class="custom-scrollbar settings-information">
+            <h2>Szczegóły</h2>
+            <ul>
+              <li>
+                <strong>Błąd, jeśli nie ma nagłówka H1</strong>: kiedy jest
+                zaznaczone, wyświetla błąd, jeśli pierwszy nagłówek nie jest H1.
+                Potrzebuje zaznaczoną opcje “Pokaż błędy”, aby być działać.
+              </li>
+              <li>
+                <strong>Pokaż poziom nagłówków</strong>: pokazuje poziom
+                nagłówka przed jego zawartością.
+              </li>
+              <li>
+                <strong>Pokaż puste nagłówki</strong>: po zaznaczeniu pokazane
+                są w drzewie puste nagłówki.
+              </li>
+              <li>
+                <strong>Pokaż ukryte nagłówki</strong>: identyfikuje i pokazuje
+                wszystkie nagłówki, niezależnie od tego, czy są ukryte czy
+                pokazane na stronie.
+              </li>
+                <li>
+                    <strong>Dodaj informację o "aria"</strong>: jeśli nagłówek używa
+                    atrybutów <em>aria-label</em> lub <em>aria-labelledby</em>, to
+                    zostaje wyświetlona "aria" (przesłanką jest dostęp technologii
+                    asystujących do ARIA)
+                </li>
+            </ul>
+          </div>
+        </fieldset>
+        <fieldset class="fieldset">
+          <legend>Punkty orientacyjne</legend>
+          <div>
+            <label for="isLandmarksTestActive">
+              <input type="checkbox" name="isLandmarksTestActive" id="isLandmarksTestActive"
+                     data-callback="refresh disableFields"
+                     data-related-fields="showNonTopLevelLandmarksError showRepeatedLandmarksError showRepeatedUniqueLandmarksError"/>
+              Włącz analizę punktów orientacyjnych
+            </label>
+
+            <label></label>
+            <label for="showNonTopLevelLandmarksError">
+              <input type="checkbox" name="showNonTopLevelLandmarksError" id="showNonTopLevelLandmarksError" data-callback="refresh"/>
+              Błąd, jeśli <code>banner</code>, <code>complementary</code>, <code>contentinfo</code> lub
+              <code>main</code> nie są punktami orientacyjnymi najwyższego poziomu
+            </label>
+            <label for="showRepeatedUniqueLandmarksError">
+              <input type="checkbox" name="showRepeatedUniqueLandmarksError" id="showRepeatedUniqueLandmarksError" data-callback="refresh"/>
+              Błąd, jeśli istnieje więcej niż jeden element <code>banner</code>, <code>contentinfo</code> lub
+              <code>main</code>
+            </label>
+            <label for="showRepeatedLandmarksError">
+              <input type="checkbox" name="showRepeatedLandmarksError" id="showRepeatedLandmarksError" data-callback="refresh"/>
+              Błąd, jeśli powtarzają się punkty orientacyjne bez etykiety (label) lub z tą samą etykietą
+            </label>
+          </div>
+          <div class="custom-scrollbar settings-information">
+            <h2>Szczegóły</h2>
+            <ul>
+              <li><strong>Włącz analizę punktów orientacyjnych</strong>: Włącza lub wyłącza analizę punktów
+                orientacyjnych. Gdy analiza jest aktywna,
+                zarówno nagłówki, jak i analiza punktów
+                orientacyjnych pojawiają się jako zakładki.
+              </li>
+              <li><strong>Błąd, jeśli <code>banner</code>, <code>complementary</code>, <code>contentinfo</code> lub
+                <code>main</code> nie są punktami orientacyjnymi najwyższego poziomu</strong>:Te
+                punkty orientacyjne powinny być zawsze
+                punktami najwyższego poziomu.
+              </li>
+              <li><strong>Błąd, jeśli istnieje więcej niż jeden element <code>banner</code>, <code>contentinfo</code>
+                lub <code>main</code></strong>: Każda strona może mieć co najwyżej jeden
+                punkt orientacyjny każdego typu.
+              </li>
+              <li><strong>Błąd, jeśli powtarzają się punkty orientacyjne bez etykiety (label) lub z tą samą
+                etykietą</strong>: Gdy istnieje więcej niż
+                jeden punkt orientacyjny o tej samej roli,
+                takie punkty powinny zawierać etykietę, aby
+                je odróżnić.
+              </li>
+            </ul>
+          </div>
+
+        </fieldset>
+        <fieldset class="fieldset">
+          <legend>HTML 5 Outline</legend>
+          <div>
+            <label for="isOutlineTestActive">
+              <input
+                      type="checkbox"
+                      name="isOutlineTestActive"
+                      id="isOutlineTestActive"
+                      data-callback="refresh disableFields"
+                      data-related-fields="showOutLevels showOutElem showHiddenSections"
+              />
+              Aktywuj analizę
+            </label>
+            <p class="note">
+              Nie ma przeglądarek ani technologii wspierających natywnie
+              implementację algorytmu W3C Outline. Dlatego nie można na nim
+              polegać, aby przekazywać użytkownikom strukturę dokumentu, a
+              autorzy powinni używać poziomu nagłówka do tego celu. (<a
+                    href="https://www.w3.org/TR/2017/REC-html52-20171214/sections.html#creating-an-outline"
+                    target="_blank"
+            >HTML 5.2 Tworzenie w oparciu o outline</a
+            >)
+            </p>
+
+            <label for="showOutLevels">
+              <input type="checkbox" name="showOutLevels" id="showOutLevels"/>
+              Pokaż indeks sekcji
+            </label>
+            <label for="showOutElem">
+              <input type="checkbox" name="showOutElem" id="showOutElem"/>
+              Pokaż tag sekcji
+            </label>
+            <label for="showHiddenSections">
+              <input
+                      type="checkbox"
+                      name="showHiddenSections"
+                      id="showHiddenSections"
+                      data-callback="refresh updateActiveDocument"
+              />
+              Uwzględnij ukryte sekcje *
+            </label>
+          </div>
+          <p class="note">
+            * Gdy opcja "uwzględnij ukryte sekcje" jest zaznaczona, analiza może
+            mieć wpływ na wydajność na dużych stronach internetowych.
+          </p>
+
+          <div class="custom-scrollbar settings-information">
+            <h2>Szczegóły</h2>
+            <ul>
+              <li>
+                <strong>Aktywuj analizę</strong>: Wyodrębnienie outline strony
+                internetowej może wpływać na wydajność, dlatego jego wykonanie
+                jest opcjonalne i domyślnie wyłączone. Gdy jest aktywne, obie
+                analizy (Struktura nagłówków i HTML5 Outline) pojawiają się jako
+                karty w panelu.
+              </li>
+              <li>
+                <strong>Pokaż indeks sekcji</strong>: pokazuje indeks przed
+                tekstem.
+              </li>
+              <li>
+                <strong>Pokaż tag sekcji</strong>: zawiera tag sekcji jako część
+                zawartości w drzewie.
+              </li>
+              <li>
+                <strong>Uwzględnij ukryte sekcje</strong>: identyfikuje i
+                pokazuje informacje o wszystkich sekcjach, niezależnie od tego,
+                czy są ukryte czy pokazane na stronie.
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+      </div>
+      <style>
+        #dialog-panel .content {
+          height: 100%;
+        }
+
+        #dialog-panel .settings-content {
+          overflow: hidden;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+        }
+
+        #dialog-panel .settings-content > div {
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+        }
+
+        #dialog-panel .settings-information {
+          overflow: auto;
+        }
+
+        #dialog-panel .tab-button {
+          width: 33.3%;
+        }
+
+        #dialog-panel .tabs {
+          margin-top: 30px;
+        }
+
+        #dialog-panel .tab-button {
+          max-width: none;
+        }
+
+        #dialog-panel .tab-button:not([aria-selected=true]) {
+          margin-bottom: 1px;
+        }
+
+        #dialog-panel div[role=tabpanel].active {
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+          padding: 10px;
+          box-sizing: border-box;
+        }
+
+        #dialog-panel .fieldset {
+          position: relative;
+          box-sizing: border-box;
+          border: none;
+          padding: 0 20px;
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+        }
+
+        #dialog-panel .fieldset legend {
+          font-weight: bold;
+          position: absolute;
+          top: -5000px;
+          left: -5000px;
+        }
+
+        #dialog-panel .fieldset label {
+          display: block;
+          float: left;
+          width: 50%;
+          box-sizing: border-box;
+          margin: 10px 0;
+        }
+
+        #dialog-panel .fieldset p {
+          border-top: 1px dotted transparent;
+        }
+
+        #dialog-panel li {
+          font-size: .9rem;
+        }
+
+        #dialog-panel .fieldset p label {
+          float: none;
+          width: auto;
+          box-sizing: border-box;
+          margin: 10px 0 5px;
+          font-weight: bold;
+        }
+
+        #dialog-panel .fieldset legend label {
+          width: auto;
+          margin: auto;
+        }
+
+        #dialog-panel .fieldset select {
+          font-weight: normal;
+        }
+
+        #dialog-panel .fieldset label:nth-child(2n + 1) {
+          clear: left;
+        }
+      </style>
+    </div>
+  </body>
+</html>

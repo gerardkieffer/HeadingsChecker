@@ -1,0 +1,323 @@
+<html lang="es">
+<head><title>Options</title></head>
+<body>
+<div class="content">
+    <h1 id="settings-header" class="headingsmap-exclude">Configuración</h1>
+
+    <div class="contents settings-content">
+        <fieldset class="fieldset">
+            <legend>General</legend>
+            <div>
+                <label for="showHeadError">
+                    <input type="checkbox" name="showHeadError" id="showHeadError"/>
+                    Identificar errores
+                </label>
+                <label for="highLightElements">
+                    <input type="checkbox" name="highLightElements" id="highLightElements"/>
+                    Resaltar al hacer click
+                </label>
+                <label for="showAnchors">
+                    <input type="checkbox" name="showAnchors" id="showAnchors" data-callback="refresh"/>
+                    Identificar anclas
+                </label>
+                <label for="darkTheme">
+                    <input type="checkbox" name="darkTheme" id="darkTheme" data-callback="setTheme"/>
+                    Modo oscuro
+                </label>
+                <label for="savePanelWidthOnResize">
+                    <input type="checkbox" name="savePanelWidthOnResize" id="savePanelWidthOnResize"
+                           data-callback="updateInitialPanelWidth"/>
+                    Guardar ancho del panel
+                </label>
+                <label for="normalWrap">
+                    <input type="checkbox" name="normalWrap" id="normalWrap"/>
+                    Cortar texto largo
+                </label>
+                <label for="showTooltip">
+                    <input type="checkbox" name="showTooltip" id="showTooltip" data-callback="setLinksBehavior"/>
+                    Mostrar tooltip
+                </label>
+                <label for="viewportIndicator">
+                    <input type="checkbox" name="viewportIndicator" id="viewportIndicator" data-callback="refresh"/>
+                    Indicador de scroll
+                </label>
+                <label for="hideTreeResultsTools">
+                    <input type="checkbox" name="hideTreeResultsTools" id="hideTreeResultsTools"/>
+                    Ocultar herramientas (búsqueda, etc.)
+                </label>
+                <p class="note">
+                    <label for="language">
+                        Idioma
+                        <select name="language" id="language">
+                        </select>
+                    </label>
+                    El cambio de idioma se aplica después de reiniciar la extensión (cerrar y volver a abrirla).
+                </p>
+                <input type="hidden" name="initialPanelWidth" id="initialPanelWidth"/>
+            </div>
+            <div class="custom-scrollbar settings-information">
+                <h2>Details</h2>
+                <ul>
+                    <li><strong>Identificar errores</strong>: resalta en el árbol los encabezados que tienen algún error.
+                    </li>
+                    <li><strong>Resaltar al hacer click</strong>: hace que al hacer click en el árbol, el encabezado correspondiente
+                        se resalte por unos segundos.
+                    </li>
+                    <li><strong>Identificar anclas</strong>: si el encabezado puede utilizarse como ancha para navegación, la extensión
+                        puede obtener dicha información.
+                    </li>
+                    <li><strong>Modo oscuro</strong>: cambia los estilos haciendo que el fondo sea un todo oscuro y los colores de
+                        primer plano sean claros.
+                    </li>
+                    <li><strong>Guardar ancho del panel</strong>: cuando se cambia del ancho del panel, dicha información puede ser
+                        guardada, con lo que la próxima vez que se abra la extensión, el panel tendrá el mismo ancho.
+                    </li>
+                    <li><strong>Cortar texto largo</strong>: cuando no hay espacio suficiente para el texto, este es truncado. Con
+                        esta opción se puede desactivar dicho estilo y hacer que pase a ser multi-línea.
+                    </li>
+                    <li><strong>Mostrar tooltip</strong>: cuando se activa, al mover el puntero sobre el árbol se muestra
+                        un panel con información sobre el análisis.
+                    </li>
+                    <li><strong>Indicador de scroll</strong>: cuando se activa hace que se identifique en el árbol los encabezados
+                        que están visibles en el área visible de la ventana.
+                    </li>
+                    <li><strong>Ocultar herramientas</strong>: cuando está activa, se ocultan ciertos botones del panel, simplificando visualmente la extensión.</li>
+                    <li><strong>Idioma</strong>: cambia el idioma. El nuevo idioma no se aplica hasta la próxima vez que la extensión
+                        se abre.
+                    </li>
+                </ul>
+            </div>
+        </fieldset>
+        <fieldset class="fieldset">
+            <legend>Encabezados</legend>
+            <div>
+                <label for="showHeadErrorH1">
+                    <input type="checkbox" name="showHeadErrorH1" id="showHeadErrorH1"/>
+                    Error si no hay h1 inicial
+                </label>
+                <label for="showHeadLevels">
+                    <input type="checkbox" name="showHeadLevels" id="showHeadLevels"/>
+                    Mostrar nivel de encabezado
+                </label>
+                <label for="showEmptyHeadings">
+                    <input type="checkbox" name="showEmptyHeadings" id="showEmptyHeadings" data-callback="refresh"/>
+                    Considerar encabezados vacíos
+                </label>
+                <label for="showHiddenHeaders">
+                    <input type="checkbox" name="showHiddenHeaders" id="showHiddenHeaders" data-callback="refresh"/>
+                    Considerar encabezados ocultos
+                </label>
+                <label for="showAriaLabelContent">
+                    <input type="checkbox" name="showAriaLabelContent" id="showAriaLabelContent" data-callback="refresh"/>
+                    Considerar ARIA
+                </label>
+            </div>
+            <div class="custom-scrollbar settings-information">
+                <h2>Detalles</h2>
+                <ul>
+                    <li><strong>Error si no hay h1 inicial</strong>: cuando está activa la opción, considera error cuando el primer encabezado no es h1. Necesita tener activada la opción de "identificar errores".</li>
+                    <li><strong>Mostrar nivel de encabezado</strong>: muestra el nivel de encabezado antes de su texto.</li>
+                    <li><strong>Considerar encabezados vacíos</strong>: hace que los encabezados vacíos se consideren.</li>
+                    <li><strong>Considerar encabezados ocultos</strong>: hace que todos los encabezados sean considerados, independientemente de si están visibles o no.</li>
+                    <li><strong>Considerar ARIA</strong>: si los encabezados utilizan <em>aria-label</em> or <em>aria-labelledby</em>,
+                        la extensión puede utilizar uss valores como texto del encabezado (esto se debe a que en algunos casos, los
+                        lectores de pantalla podrían acceder a esa información y utilizarla como contenido).
+                    </li>
+                </ul>
+            </div>
+        </fieldset>
+        <fieldset class="fieldset">
+            <legend>Landmarks</legend>
+            <div>
+                <label for="isLandmarksTestActive">
+                    <input type="checkbox" name="isLandmarksTestActive" id="isLandmarksTestActive"
+                           data-callback="refresh disableFields"
+                           data-related-fields="showNonTopLevelLandmarksError showRepeatedLandmarksError showRepeatedUniqueLandmarksError"/>
+                    análisis activo
+                </label>
+
+                <label></label>
+                <label for="showNonTopLevelLandmarksError">
+                    <input type="checkbox" name="showNonTopLevelLandmarksError" id="showNonTopLevelLandmarksError" data-callback="refresh"/>
+                    Error si <code>banner</code>, <code>complementary</code>, <code>contentinfo</code> o <code>main</code> no son top-level landmarks
+                </label>
+                <label for="showRepeatedUniqueLandmarksError">
+                    <input type="checkbox" name="showRepeatedUniqueLandmarksError" id="showRepeatedUniqueLandmarksError" data-callback="refresh"/>
+                    Error si hay más de un <code>banner</code>, <code>contentinfo</code>, o <code>main</code>
+                </label>
+                <label for="showRepeatedLandmarksError">
+                    <input type="checkbox" name="showRepeatedLandmarksError" id="showRepeatedLandmarksError" data-callback="refresh"/>
+                    Error si hay multiples instancias del mismo landmark sin label, o con el mismo label.
+                </label>
+            </div>
+            <div class="custom-scrollbar settings-information">
+                <h2>Detalles</h2>
+                <ul>
+                    <li><strong>Landmarks análisis activo</strong>: Activa y desactiva el análisis. Cuando está activo, ambos análisis se muestran como pestañas.</li>
+                    <li><strong>Error si <code>banner</code>, <code>complementary</code>, <code>contentinfo</code> o <code>main</code> no son top-level landmarks</strong>: Estos landmarks deben ser top-level landmarks.</li>
+                    <li><strong>Error si hay más de un <code>banner</code>, <code>contentinfo</code>, o <code>main</code></strong>: Cada página puede tener como máximo un <code>banner</code>, <code>contentinfo</code>, o <code>main</code>.</li>
+                    <li><strong>Error si hay multiples instancias del mismo landmark sin label, o con el mismo label</strong>: Cuando una página tiene el mismo landmark repetido, deben tener un nombre y ser diferentes.</li>
+                </ul>
+            </div>
+
+        </fieldset>
+        <fieldset class="fieldset">
+            <legend>HTML 5 Outline</legend>
+            <div>
+                <label for="isOutlineTestActive">
+                    <input type="checkbox" name="isOutlineTestActive" id="isOutlineTestActive"
+                           data-callback="refresh disableFields"
+                           data-related-fields="showOutLevels showOutElem showHiddenSections"/>
+                    Activar analysis
+                </label>
+                <p class="note">Actualmente no hay navegadores ni tecnología asistiva con soporte nativo para el
+                    algoritmo
+                    W3C Outline.
+                    Por ese motivo, no se puede confiar plenamente en él para transmitir la estructura de los documentos
+                    a
+                    los usuarios
+                    y usuaria. Los autores de contenido deberçian seguir utilizando los niveles de encabezado (1 to 6)
+                    para
+                    hacerlo (<a href="https://www.w3.org/TR/2017/REC-html52-20171214/sections.html#creating-an-outline"
+                                target="_blank" lang="en">HTML 5.2 Creating an outline</a>)
+
+                    <label for="showOutLevels">
+                        <input type="checkbox" name="showOutLevels" id="showOutLevels"/>
+                        Mostrar índice de sección
+                    </label>
+                    <label for="showOutElem">
+                        <input type="checkbox" name="showOutElem" id="showOutElem"/>
+                        Mostrar etiqueta de sección
+                    </label>
+                    <label for="showHiddenSections">
+                        <input type="checkbox" name="showHiddenSections" id="showHiddenSections"
+                               data-callback="refresh updateActiveDocument"/>
+                        Considerar secciones ocultas *
+                    </label>
+            </div>
+            <p class="note">* Cuando la opción "considerar secciones ocultas" está activa, el análisis puede impactar en
+                el
+                rendimiento cuando la página a revisar es
+                muy larga y compleja.</p>
+
+            <div class="custom-scrollbar settings-information">
+                <h2>Details</h2>
+                <ul>
+                    <li><strong>Activar analysis</strong>: extraer esta información puede impactar en el rendimiento,
+                        por lo que su ejecución es opcional y está desactivada por defecto. Cuando está activo, ambos
+                        análisis (encabezados y HTML 5 Ourline) aparecen como pestañas en el panel.
+                    </li>
+                    <li><strong>Mostrar índice de sección</strong>: muestra el índice de la sección.</li>
+                    <li><strong>Mostrar etiqueta de sección</strong>: incluye la etiqueta utilizada para generar la
+                        sección.
+                    </li>
+                    <li><strong>Considerar secciones ocultas</strong>: considera todos los elementos de sección,
+                        independientemente de si están visibles u ocultos.
+                    </li>
+                </ul>
+            </div>
+        </fieldset>
+    </div>
+    <style>
+        #dialog-panel .content {
+            height: 100%;
+        }
+
+        #dialog-panel .settings-content {
+            overflow: hidden;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #dialog-panel .settings-content > div {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        #dialog-panel .settings-information {
+            overflow: auto;
+        }
+
+        #dialog-panel .tab-button {
+            width: 33.3%;
+        }
+
+        #dialog-panel .tabs {
+            margin-top: 30px;
+        }
+
+        #dialog-panel .tab-button {
+            max-width: none;
+        }
+
+        #dialog-panel .tab-button:not([aria-selected=true]) {
+            margin-bottom: 1px;
+        }
+
+        #dialog-panel div[role=tabpanel].active {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        #dialog-panel .fieldset {
+            position: relative;
+            box-sizing: border-box;
+            border: none;
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        #dialog-panel .fieldset legend {
+            font-weight: bold;
+            position: absolute;
+            top: -5000px;
+            left: -5000px;
+        }
+
+        #dialog-panel .fieldset label {
+            display: block;
+            float: left;
+            width: 50%;
+            box-sizing: border-box;
+            margin: 10px 0;
+        }
+
+        #dialog-panel .fieldset p {
+            border-top: 1px dotted transparent;
+        }
+
+        #dialog-panel li {
+            font-size: .9rem;
+        }
+
+        #dialog-panel .fieldset p label {
+            float: none;
+            width: auto;
+            box-sizing: border-box;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        #dialog-panel .fieldset legend label {
+            width: auto;
+            margin: auto;
+        }
+
+        #dialog-panel .fieldset select {
+            font-weight: normal;
+        }
+
+        #dialog-panel .fieldset label:nth-child(2n + 1) {
+            clear: left;
+        }
+    </style>
+</div>
+</body>
+</html>
